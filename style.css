@@ -1,20 +1,26 @@
 body {
-    background-color: #E0FFDB;
+    background-color: #111;
+    margin: 0;
 }
+
 h1 {
     font-family: "WDXL Lubrifont SC", sans-serif;
-    text-decoration-color: #E6CFFF;
     background-color: goldenrod;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #111;
-}
 .iphone-img {
+    width: 450px;
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.col-md-6 p {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
