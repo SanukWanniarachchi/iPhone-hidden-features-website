@@ -29,3 +29,159 @@ html {
 .para32 {
     font-family: "Megrim", sans-serif;
 }
+#overview {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+.hidden-word {
+    display: inline-block;
+    position: relative;
+    animation: hiddenGlitch 4s infinite;
+}
+
+@keyframes hiddenGlitch {
+    0% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    64% {
+        opacity: 1;
+        transform: translate(-3px, 2px) skew(-5deg);
+        text-shadow: 3px 0 red, -3px 0 cyan;
+    }
+
+    67% {
+        opacity: 0.3;
+        transform: translate(4px, -2px) skew(5deg);
+        text-shadow: -3px 0 red, 3px 0 cyan;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    78% {
+        opacity: 0;
+    }
+
+    82% {
+        opacity: 1;
+        transform: translate(-2px, 1px);
+        text-shadow: 2px 0 red, -2px 0 cyan;
+    }
+
+    85% {
+        opacity: 0.4;
+        transform: translate(3px, -1px);
+    }
+
+    88% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        text-shadow: none;
+    }
+}
+.features-offcanvas {
+    --bs-offcanvas-width: 430px;
+
+    background: rgba(8, 25, 28, 0.78);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+    color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.75);
+}
+
+/* Header area */
+.features-offcanvas .offcanvas-header {
+    padding: 30px 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.04);
+    font-family: "Bungee Outline" ;
+}
+
+/* Title */
+.features-offcanvas .offcanvas-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Body spacing */
+.features-offcanvas .offcanvas-body {
+    padding: 28px 30px;
+}
+
+/* Feature links */
+.features-offcanvas .feature-link {
+    display: block;
+
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    padding: 15px 18px;
+    margin-bottom: 14px;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hover pop effect */
+.features-offcanvas .feature-link:hover {
+    color: white;
+
+    background: rgba(218, 165, 32, 0.22);
+    border-color: rgba(218, 165, 32, 0.7);
+
+    transform: translateX(-10px) scale(1.04);
+
+    box-shadow:
+        0 0 22px rgba(218, 165, 32, 0.35),
+        inset 0 0 18px rgba(255, 255, 255, 0.06);
+}
+
+/* Click effect */
+.features-offcanvas .feature-link:active {
+    transform: translateX(-5px) scale(0.98);
+}
+
+/* Close button softer look */
+.features-offcanvas .btn-close {
+    opacity: 0.75;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.features-offcanvas .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg) scale(1.1);
+}

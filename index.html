@@ -13,11 +13,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     </head>
     <body>   
-        <h1 class="text-center text-light p-3">10 Hidden Features Of iPhone</h1>
+        <h1 class="text-center text-light p-3">
+            10 <span class="hidden-word">Hidden</span> Features Of iPhone
+        </h1>
         
-        <nav class="navbar navbar-expand-lg bg-info-subtle" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-info-subtle sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#top">
@@ -38,10 +42,6 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#specifications">Specifications</a>
-                        </li>
-
-                        <li class="nav-item">
                             <button class="btn btn-outline-light ms-lg-2"
                                 type="button"
                                 data-bs-toggle="offcanvas"
@@ -57,54 +57,25 @@
         </nav>
         <!-- <img src="img/i17.jpg" class="img-fluid" alt="img"> -->
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="featuresPanel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">10 Hidden Features</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-
-                <div class="offcanvas-body">
-                    <a class="d-block mb-3" href="#backtap" data-bs-dismiss="offcanvas">
-                        1. Back Tap
-                    </a>
-
-                    <a class="d-block mb-3" href="#livetext" data-bs-dismiss="offcanvas">
-                        2. Live Text
-                    </a>
-
-                    <a class="d-block mb-3" href="#faceid" data-bs-dismiss="offcanvas">
-                        3. Lock & Hide Apps with Face ID
-                    </a>
-
-                    <a class="d-block mb-3" href="#safetycheck" data-bs-dismiss="offcanvas">
-                        4. Safety Check
-                    </a>
-
-                    <a class="d-block mb-3" href="#appclips" data-bs-dismiss="offcanvas">
-                        5. App Clips
-                    </a>
-
-                    <a class="d-block mb-3" href="#facetime" data-bs-dismiss="offcanvas">
-                        6. Remote iPhone Assistance
-                    </a>
-
-                    <a class="d-block mb-3" href="#darkmode" data-bs-dismiss="offcanvas">
-                        7. Ultra Dark Mode
-                    </a>
-
-                    <a class="d-block mb-3" href="#voicemail" data-bs-dismiss="offcanvas">
-                        8. Live Voicemail
-                    </a>
-
-                    <a class="d-block mb-3" href="#shortcuts" data-bs-dismiss="offcanvas">
-                        9. Shortcuts Automation
-                    </a>
-
-                    <a class="d-block mb-3" href="#hideip" data-bs-dismiss="offcanvas">
-                        10. Hide IP Address in Safari
-                    </a>
-                </div>
+        <div class="offcanvas offcanvas-end features-offcanvas" tabindex="-1" id="featuresPanel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">10 Hidden Features</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
             </div>
+
+            <div class="offcanvas-body">
+                <a class="feature-link" href="#backtap" data-bs-dismiss="offcanvas">1. Back Tap</a>
+                <a class="feature-link" href="#livetext" data-bs-dismiss="offcanvas">2. Live Text</a>
+                <a class="feature-link" href="#faceid" data-bs-dismiss="offcanvas">3. Lock & Hide Apps with Face ID</a>
+                <a class="feature-link" href="#safetycheck" data-bs-dismiss="offcanvas">4. Safety Check</a>
+                <a class="feature-link" href="#appclips" data-bs-dismiss="offcanvas">5. App Clips</a>
+                <a class="feature-link" href="#facetime" data-bs-dismiss="offcanvas">6. Remote iPhone Assistance</a>
+                <a class="feature-link" href="#darkmode" data-bs-dismiss="offcanvas">7. Ultra Dark Mode</a>
+                <a class="feature-link" href="#voicemail" data-bs-dismiss="offcanvas">8. Live Voicemail</a>
+                <a class="feature-link" href="#shortcuts" data-bs-dismiss="offcanvas">9. Shortcuts Automation</a>
+                <a class="feature-link" href="#hideip" data-bs-dismiss="offcanvas">10. Hide IP Address in Safari</a>
+            </div>
+        </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -123,5 +94,24 @@
 
                 </div>
             </div>
+            <section id="overview" class="container py-5 text-light">
+
+                <h2 class="mb-4">Overview</h2>
+
+                <p>
+                    Most iPhone users only scratch the surface of what their devices can do.
+                    Hidden within iOS are powerful tools designed to improve productivity,
+                    privacy, accessibility, and everyday convenience. From Back Tap shortcuts
+                    to Live Text and advanced automation, these features can make your iPhone
+                    smarter and easier to use.
+                </p>
+
+                <p>
+                    This guide highlights 10 useful hidden iPhone features that many users
+                    overlook. Whether you're a new iPhone owner or a long-time Apple user,
+                    you'll discover practical tools that can help you get more out of your device.
+                </p>
+
+            </section>
     </body>
 </html>
