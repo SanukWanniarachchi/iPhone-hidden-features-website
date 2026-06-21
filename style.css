@@ -13,3 +13,8 @@ html {
 body {
     background-color: #111;
 }
+.iphone-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
