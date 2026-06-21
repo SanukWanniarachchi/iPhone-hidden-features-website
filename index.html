@@ -272,62 +272,6 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
 
-            <script>
-                document.querySelectorAll('.feature-link').forEach(function(link) {
-                    link.addEventListener('click', function(event) {
-                        event.preventDefault();
-
-                        const targetId = this.getAttribute('href');
-                        const targetSection = document.querySelector(targetId);
-
-                        const offcanvasElement = document.getElementById('featuresPanel');
-                        const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
-
-                        if (offcanvasInstance) {
-                            offcanvasInstance.hide();
-                        }
-
-                        setTimeout(function() {
-                            targetSection.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        }, 300);
-                    });
-                });
-            </script>
-
-            <script>
-                document.querySelectorAll('.feature-link').forEach(function(link) {
-                    link.addEventListener('click', function(event) {
-                        event.preventDefault();
-
-                        const clickedLink = this;
-                        const targetId = clickedLink.getAttribute('href');
-                        const targetSection = document.querySelector(targetId);
-
-                        clickedLink.classList.add('selecting');
-
-                        setTimeout(function() {
-                            const offcanvasElement = document.getElementById('featuresPanel');
-                            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
-
-                            if (offcanvasInstance) {
-                                offcanvasInstance.hide();
-                            }
-
-                            setTimeout(function() {
-                                targetSection.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'start'
-                                });
-
-                                clickedLink.classList.remove('selecting');
-                            }, 250);
-
-                        }, 450);
-                    });
-                });
-            </script>
+        <script src="scripts.js"></script>
     </body>
 </html>
