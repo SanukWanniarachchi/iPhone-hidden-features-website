@@ -254,7 +254,7 @@ html {
 .feature-text {
     flex: 1;
     max-width: 620px;
-    
+    font-family: "Bungee Hairline", sans-serif;
 }
 
 .feature-number {
@@ -324,4 +324,23 @@ html {
     .feature-text p {
         font-size: 1rem;
     }
+}
+.site-footer {
+    background-color: #050505;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 60px;
+    font-family: "Ubuntu", sans-serif;
+    border-top: 1px solid #333;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.site-footer p:first-child {
+    color: #ffffff;
+    font-weight: 500;
 }
