@@ -13,10 +13,11 @@ html {
 }
 
 .iphone-img {
-    width: 450px;
+    width: 350px;
     max-width: 100%;
     height: auto;
     display: block;
+    margin-left: 40px;
 }
 
 .col-md-6 p {
