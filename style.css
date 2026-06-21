@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
-    font-family: "WDXL Lubrifont SC", sans-serif;
-    background-color: goldenrod;
+    font-family: "Bungee Outline", sans-serif;
+    background-color: #474747;
+    font-size: 65px;
 }
 
 html {
@@ -21,7 +22,10 @@ html {
 }
 
 .col-md-6 p {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 1.2;
+}
+.para32 {
+    font-family: "Megrim", sans-serif;
 }
