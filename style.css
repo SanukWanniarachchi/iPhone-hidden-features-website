@@ -3,4 +3,13 @@ body {
 }
 h1 {
     font-family: "WDXL Lubrifont SC", sans-serif;
+    text-decoration-color: #E6CFFF;
+    background-color: goldenrod;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
 }
