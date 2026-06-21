@@ -6,7 +6,7 @@ body {
 h1 {
     font-family: "Bungee Outline", sans-serif;
     background-color: #474747;
-    font-size: 65px;
+    font-size: clamp(2.25rem, 6vw, 4.0625rem);
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 }
 
 .col-md-6 p {
-    font-size: 4rem;
+    font-size: clamp(2.25rem, 6vw, 4rem);
     font-weight: bold;
     line-height: 1.2;
 }
@@ -319,6 +319,11 @@ html {
 
     .feature-image img {
         height: 420px;
+    }
+
+    .iphone-img {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .feature-text p {
