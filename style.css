@@ -325,22 +325,16 @@ html {
         font-size: 1rem;
     }
 }
+
 .site-footer {
-    background-color: #050505;
-    color: #bdbdbd;
+    background-color: #111;
+    color: #aaa;
     text-align: center;
     padding: 30px 15px;
-    margin-top: 60px;
-    font-family: "Ubuntu", sans-serif;
+    font-size: 0.9rem;
     border-top: 1px solid #333;
 }
 
 .site-footer p {
-    margin: 5px 0;
-    font-size: 0.95rem;
-}
-
-.site-footer p:first-child {
-    color: #ffffff;
-    font-weight: 500;
+    margin: 6px 0;
 }
