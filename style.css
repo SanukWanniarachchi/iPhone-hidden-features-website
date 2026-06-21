@@ -254,6 +254,7 @@ html {
 .feature-text {
     flex: 1;
     max-width: 620px;
+    
 }
 
 .feature-number {
@@ -263,8 +264,11 @@ html {
     color: #00d4ff;
     letter-spacing: 2px;
     margin-bottom: 12px;
+    
 }
-
+.desc00 {
+    font-family: "Ubuntu", sans-serif;
+}
 .feature-text h2 {
     font-size: clamp(2.2rem, 5vw, 4.5rem);
     font-weight: 800;
